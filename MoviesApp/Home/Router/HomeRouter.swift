@@ -3,7 +3,7 @@
 //  MoviesApp
 //
 //  Created by marco rodriguez on 30/06/22.
-//
+// Se ha registrado en la pag: https://www.themoviedb.org/settings/api/new/form?type=developer para obtener el API Key
 
 //Esta clase creará mi ob home y servira de router para ir a otras vistas/pantallas
 

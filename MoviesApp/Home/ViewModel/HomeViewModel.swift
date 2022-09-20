@@ -24,5 +24,7 @@ class HomeViewModel {
         self.router?.setSourceView(view)
     }
     
-    
+    deinit {
+        print("DEBUG: Se libero memoria")
+    }
 }
