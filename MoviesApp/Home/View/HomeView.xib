@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeView" customModule="MoviesApp" customModuleProvider="target">
             <connections>
+                <outlet property="activity" destination="LyH-gh-4YX" id="IXQ-7L-roD"/>
+                <outlet property="tableView" destination="ZgF-u8-l6b" id="6qB-PS-FI8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,17 +20,38 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Movies App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSx-En-RrG">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Movies App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSx-En-RrG">
                     <rect key="frame" x="109" y="72" width="196" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZgF-u8-l6b">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="LyH-gh-4YX">
+                    <rect key="frame" x="188.5" y="264" width="37" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="37" id="2H3-Iu-wCp"/>
+                        <constraint firstAttribute="height" constant="37" id="mlm-da-4w7"/>
+                    </constraints>
+                    <color key="color" red="0.18393841389999999" green="0.15450075269999999" blue="0.6353160739" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="132" y="96"/>
+            <constraints>
+                <constraint firstItem="ZgF-u8-l6b" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5rP-SQ-1Lo"/>
+                <constraint firstItem="ZgF-u8-l6b" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="6Ns-9y-NIK"/>
+                <constraint firstItem="LyH-gh-4YX" firstAttribute="centerX" secondItem="tSx-En-RrG" secondAttribute="centerX" id="UO4-0n-sHU"/>
+                <constraint firstItem="ZgF-u8-l6b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="URi-4z-EIq"/>
+                <constraint firstItem="tSx-En-RrG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="28" id="Vgw-pg-pm3"/>
+                <constraint firstItem="LyH-gh-4YX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hhc-up-bX3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ZgF-u8-l6b" secondAttribute="bottom" id="ovg-nm-nNl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="LyH-gh-4YX" secondAttribute="bottom" constant="561" id="uaP-Ys-onS"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
         </view>
     </objects>
     <resources>
