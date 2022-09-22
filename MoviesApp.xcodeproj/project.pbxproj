@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6014B1BA28DCF0FE0097DA79 /* ManagerConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6014B1B928DCF0FE0097DA79 /* ManagerConnections.swift */; };
+		6014B1BC28DCF1D60097DA79 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6014B1BB28DCF1D60097DA79 /* Movies.swift */; };
 		604BF24428D95DEE005F55E5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604BF24328D95DEE005F55E5 /* Constants.swift */; };
 		60B01D9A286E2C51006B3218 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B01D99286E2C51006B3218 /* AppDelegate.swift */; };
 		60B01D9C286E2C51006B3218 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B01D9B286E2C51006B3218 /* SceneDelegate.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6014B1B928DCF0FE0097DA79 /* ManagerConnections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerConnections.swift; sourceTree = "<group>"; };
+		6014B1BB28DCF1D60097DA79 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		604BF24328D95DEE005F55E5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		60B01D96286E2C51006B3218 /* MoviesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B01D99286E2C51006B3218 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,8 +58,15 @@
 				A5B5F8D947290C2444E08ED0 /* Pods-MoviesApp.debug.xcconfig */,
 				CEB776C94B620141A551F6A5 /* Pods-MoviesApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		6014B1B828DCF0C60097DA79 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				6014B1B928DCF0FE0097DA79 /* ManagerConnections.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 		604BF24228D95DE3005F55E5 /* Resources */ = {
@@ -70,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				60B01D98286E2C51006B3218 /* MoviesApp */,
+				6014B1B828DCF0C60097DA79 /* NetworkManager */,
 				60B01D97286E2C51006B3218 /* Products */,
 				17F794FC36952A9985D89030 /* Pods */,
 				893670B21A2EA2E614C242FC /* Frameworks */,
@@ -145,6 +157,7 @@
 		60B01DB8286E361F006B3218 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6014B1BB28DCF1D60097DA79 /* Movies.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -274,7 +287,9 @@
 			files = (
 				60B01DB1286E3482006B3218 /* HomeView.swift in Sources */,
 				60B01DB6286E3517006B3218 /* HomeRouter.swift in Sources */,
+				6014B1BC28DCF1D60097DA79 /* Movies.swift in Sources */,
 				60B01D9A286E2C51006B3218 /* AppDelegate.swift in Sources */,
+				6014B1BA28DCF0FE0097DA79 /* ManagerConnections.swift in Sources */,
 				60B01DBA286E363C006B3218 /* HomeViewModel.swift in Sources */,
 				60B01D9C286E2C51006B3218 /* SceneDelegate.swift in Sources */,
 				604BF24428D95DEE005F55E5 /* Constants.swift in Sources */,
