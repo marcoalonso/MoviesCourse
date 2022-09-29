@@ -26,6 +26,15 @@ class HomeView: UIViewController {
 
         viewModel.bind(view: self, router: router)
         getData()
+        tableView.delegate = self
+        tableView.dataSource = self
+        configureTableView()
+        
+    }
+    
+    private func configureTableView() {
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.register(UINib(nibName: "CustomMovieCell", bundle: nil), forCellReuseIdentifier: "CustomMovieCell")
     }
     
     private func getData() {
@@ -64,10 +73,14 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = movies[indexPath.row].originalTitle
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CustomMovieCell.self)) as! CustomMovieCell
+        cell.titleMovie.text = movies[indexPath.row].originalTitle
+        cell.descriptionMovie.text = movies[indexPath.row].overview
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
     
 }

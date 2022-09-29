@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		600D375228E52ED800C9B82C /* CustomMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600D375028E52ED800C9B82C /* CustomMovieCell.swift */; };
+		600D375328E52ED800C9B82C /* CustomMovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 600D375128E52ED800C9B82C /* CustomMovieCell.xib */; };
 		6014B1BA28DCF0FE0097DA79 /* ManagerConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6014B1B928DCF0FE0097DA79 /* ManagerConnections.swift */; };
 		6014B1BC28DCF1D60097DA79 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6014B1BB28DCF1D60097DA79 /* Movies.swift */; };
 		604BF24428D95DEE005F55E5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604BF24328D95DEE005F55E5 /* Constants.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		600D375028E52ED800C9B82C /* CustomMovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMovieCell.swift; sourceTree = "<group>"; };
+		600D375128E52ED800C9B82C /* CustomMovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomMovieCell.xib; sourceTree = "<group>"; };
 		6014B1B928DCF0FE0097DA79 /* ManagerConnections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerConnections.swift; sourceTree = "<group>"; };
 		6014B1BB28DCF1D60097DA79 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		604BF24328D95DEE005F55E5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 			children = (
 				60B01DAF286E3482006B3218 /* HomeView.swift */,
 				60B01DB0286E3482006B3218 /* HomeView.xib */,
+				600D375028E52ED800C9B82C /* CustomMovieCell.swift */,
+				600D375128E52ED800C9B82C /* CustomMovieCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -233,6 +239,7 @@
 				60B01DA6286E2C54006B3218 /* LaunchScreen.storyboard in Resources */,
 				60B01DA3286E2C54006B3218 /* Assets.xcassets in Resources */,
 				60B01DB2286E3482006B3218 /* HomeView.xib in Resources */,
+				600D375328E52ED800C9B82C /* CustomMovieCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +297,7 @@
 				6014B1BC28DCF1D60097DA79 /* Movies.swift in Sources */,
 				60B01D9A286E2C51006B3218 /* AppDelegate.swift in Sources */,
 				6014B1BA28DCF0FE0097DA79 /* ManagerConnections.swift in Sources */,
+				600D375228E52ED800C9B82C /* CustomMovieCell.swift in Sources */,
 				60B01DBA286E363C006B3218 /* HomeViewModel.swift in Sources */,
 				60B01D9C286E2C51006B3218 /* SceneDelegate.swift in Sources */,
 				604BF24428D95DEE005F55E5 /* Constants.swift in Sources */,
