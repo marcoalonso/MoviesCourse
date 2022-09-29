@@ -76,6 +76,8 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CustomMovieCell.self)) as! CustomMovieCell
         cell.titleMovie.text = movies[indexPath.row].originalTitle
         cell.descriptionMovie.text = movies[indexPath.row].overview
+        let urlImage = Constants.URL.urlImages+self.movies[indexPath.row].posterPath
+        cell.imageMovie.imagenFromServerURL(urlString: urlImage, placeHolderImage: UIImage(named: "claqueta")!)
         return cell
     }
     
